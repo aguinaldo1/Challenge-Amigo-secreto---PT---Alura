@@ -26,7 +26,7 @@ function amigoSecreto() {
     }
 }
 
-// funcão atualizar a lista 
+// atualizar a lista 
 function atualizarLista() {
     let listaAtualizada = document.getElementById("listaAmigos");
     listaAtualizada.innerHTML = "";
