@@ -25,3 +25,14 @@ function amigoSecreto() {
         atualizarLista();
     }
 }
+
+// funcão atualizar a lista 
+function atualizarLista() {
+    let listaAtualizada = document.getElementById("listaAmigos");
+    listaAtualizada.innerHTML = "";
+    for (let i = 0; i < listaDeAmigos.length; i++) {
+        let itemLista = document.createElement("li");
+        itemLista.innerHTML = listaDeAmigos[i];
+        listaAtualizada.appendChild(itemLista);
+    }
+}
