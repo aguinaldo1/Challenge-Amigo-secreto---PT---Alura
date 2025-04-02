@@ -13,3 +13,15 @@ function salvarNome() {
     }
 }
 
+//criando função amigoSecreto 
+let amigoSecreto = [];
+function amigoSecreto() {
+    let amigoSecreto = document.getElementById("amigo").value;
+    if (amigoSecreto == "") {
+        alert("Inserir nome do amigo secreto");
+    } else {
+        listaAmigos.push(amigoSecreto);
+        document.getElementById("amigo").value ="";
+        atualizarLista();
+    }
+}
